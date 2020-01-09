@@ -18,6 +18,8 @@
 		D2D47EBD23C7366400EA351F /* SofuberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D47EBC23C7366400EA351F /* SofuberTests.swift */; };
 		D2D47EC823C7366400EA351F /* SofuberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D47EC723C7366400EA351F /* SofuberUITests.swift */; };
 		D2D47ED623C740B100EA351F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2D47ED523C740B100EA351F /* GoogleService-Info.plist */; };
+		D2D47ED923C7431300EA351F /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D47ED823C7431300EA351F /* PersistenceService.swift */; };
+		D2D47EE023C745A300EA351F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2D47EDE23C745A300EA351F /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		D2D47EC723C7366400EA351F /* SofuberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofuberUITests.swift; sourceTree = "<group>"; };
 		D2D47EC923C7366400EA351F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2D47ED523C740B100EA351F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D2D47ED823C7431300EA351F /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		D2D47EDF23C745A300EA351F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 		D2D47EA623C7365E00EA351F /* Sofuber */ = {
 			isa = PBXGroup;
 			children = (
+				D2D47EDA23C7446100EA351F /* CoreData */,
+				D2D47ED723C742DA00EA351F /* Model */,
 				D2D47EA723C7365E00EA351F /* AppDelegate.swift */,
 				D2D47EA923C7365E00EA351F /* ViewController.swift */,
 				D2D47EAB23C7365E00EA351F /* Main.storyboard */,
@@ -146,6 +152,7 @@
 				D2D47EB023C7366300EA351F /* LaunchScreen.storyboard */,
 				D2D47ED523C740B100EA351F /* GoogleService-Info.plist */,
 				D2D47EB323C7366300EA351F /* Info.plist */,
+				D2D47EDE23C745A300EA351F /* Model.xcdatamodeld */,
 			);
 			path = Sofuber;
 			sourceTree = "<group>";
@@ -166,6 +173,21 @@
 				D2D47EC923C7366400EA351F /* Info.plist */,
 			);
 			path = SofuberUITests;
+			sourceTree = "<group>";
+		};
+		D2D47ED723C742DA00EA351F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2D47ED823C7431300EA351F /* PersistenceService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2D47EDA23C7446100EA351F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,7 +439,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D47EAA23C7365E00EA351F /* ViewController.swift in Sources */,
+				D2D47ED923C7431300EA351F /* PersistenceService.swift in Sources */,
 				D2D47EA823C7365E00EA351F /* AppDelegate.swift in Sources */,
+				D2D47EE023C745A300EA351F /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,6 +768,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D2D47EDE23C745A300EA351F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D2D47EDF23C745A300EA351F /* Model.xcdatamodel */,
+			);
+			currentVersion = D2D47EDF23C745A300EA351F /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D2D47E9C23C7365E00EA351F /* Project object */;
 }
