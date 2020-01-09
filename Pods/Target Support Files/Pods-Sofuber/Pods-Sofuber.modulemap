@@ -1,0 +1,6 @@
+framework module Pods_Sofuber {
+  umbrella header "Pods-Sofuber-umbrella.h"
+
+  export *
+  module * { export * }
+}
