@@ -17,6 +17,7 @@ import CoreData
 class ViewController: UIViewController, GIDSignInUIDelegate {
     var userCore: String?
     var passCore: String?
+    
     @IBOutlet weak var txtUser: UITextField?
     @IBOutlet weak var txtPass: UITextField?
     @IBOutlet weak var signInButton: UIButton?

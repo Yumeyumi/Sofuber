@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="534-Tb-mVj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOV-kC-0Ys">
                                         <rect key="frame" x="55" y="140" width="265" height="30"/>
@@ -37,6 +37,9 @@
                                         <rect key="frame" x="130" y="280" width="115" height="30"/>
                                         <color key="backgroundColor" red="0.64854166530000001" green="1" blue="0.77794253440000005" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Sign in"/>
+                                        <connections>
+                                            <action selector="onClickSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qsr-Wx-6kF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bm-KL-R9e">
                                         <rect key="frame" x="55" y="330" width="265" height="30"/>
@@ -49,6 +52,12 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FiT-x7-JEa" customClass="GIDSignInButton">
                                         <rect key="frame" x="55" y="386" width="265" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="y4k-1m-oGH"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="onClickSignInGoogle:" destination="BYZ-38-t0r" eventType="valueChanged" id="Dm1-gT-fUk"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -62,7 +71,6 @@
                                     <constraint firstItem="kOV-kC-0Ys" firstAttribute="top" secondItem="534-Tb-mVj" secondAttribute="top" constant="140" id="ZiM-AU-TAD"/>
                                     <constraint firstAttribute="trailing" secondItem="kOV-kC-0Ys" secondAttribute="trailing" constant="55" id="bdJ-fy-aBu"/>
                                     <constraint firstItem="4H9-oI-daF" firstAttribute="leading" secondItem="534-Tb-mVj" secondAttribute="leading" constant="55" id="cQQ-Tz-OGh"/>
-                                    <constraint firstAttribute="bottom" secondItem="FiT-x7-JEa" secondAttribute="bottom" constant="251" id="dqa-vF-kEW"/>
                                     <constraint firstItem="FiT-x7-JEa" firstAttribute="top" secondItem="2Bm-KL-R9e" secondAttribute="bottom" constant="26" id="kZQ-xO-cx6"/>
                                     <constraint firstItem="FiT-x7-JEa" firstAttribute="top" secondItem="2Bm-KL-R9e" secondAttribute="bottom" constant="26" id="lD4-W1-YAG"/>
                                     <constraint firstAttribute="trailing" secondItem="2Bm-KL-R9e" secondAttribute="trailing" constant="55" id="mPL-vI-S3b"/>
@@ -78,19 +86,23 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="534-Tb-mVj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FhI-gc-dh5"/>
                             <constraint firstAttribute="trailing" secondItem="534-Tb-mVj" secondAttribute="trailing" id="L1P-MA-vca"/>
                             <constraint firstItem="534-Tb-mVj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LTE-Qk-qUa"/>
                             <constraint firstItem="534-Tb-mVj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PEQ-S9-rXQ"/>
+                            <constraint firstItem="534-Tb-mVj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PsQ-wY-YBT"/>
+                            <constraint firstItem="534-Tb-mVj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YKh-ck-cL4"/>
                             <constraint firstItem="534-Tb-mVj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rmX-lU-IML"/>
+                            <constraint firstItem="534-Tb-mVj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wpx-bi-1QC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="signInButton" destination="olW-vm-wrn" id="q1v-ur-Xbf"/>
-                        <outlet property="signInButtonGoogle" destination="FiT-x7-JEa" id="4EU-rg-9jh"/>
-                        <outlet property="signUpButton" destination="2Bm-KL-R9e" id="ULa-Uf-vx6"/>
-                        <outlet property="txtPass" destination="4H9-oI-daF" id="wgV-Bq-ehN"/>
-                        <outlet property="txtUser" destination="kOV-kC-0Ys" id="NZ0-Hj-2a6"/>
+                        <outlet property="signInButton" destination="olW-vm-wrn" id="OK0-M2-fHb"/>
+                        <outlet property="signInButtonGoogle" destination="FiT-x7-JEa" id="4lL-4X-bKf"/>
+                        <outlet property="signUpButton" destination="2Bm-KL-R9e" id="v20-pY-gBQ"/>
+                        <outlet property="txtPass" destination="4H9-oI-daF" id="CRy-AL-6FX"/>
+                        <outlet property="txtUser" destination="kOV-kC-0Ys" id="jTh-ad-MOs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -152,7 +164,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
                                     <navigationItem id="9cv-GH-yx6">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="F6p-fz-vXx"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="F6p-fz-vXx">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="Yc5-bq-mqk"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -198,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CqS-Ms-JZL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="777" y="659"/>
+            <point key="canvasLocation" x="-954" y="666"/>
         </scene>
     </scenes>
 </document>
