@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2D47EA823C7365E00EA351F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D47EA723C7365E00EA351F /* AppDelegate.swift */; };
+		D2D47EAA23C7365E00EA351F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D47EA923C7365E00EA351F /* ViewController.swift */; };
+		D2D47EAD23C7365E00EA351F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D47EAB23C7365E00EA351F /* Main.storyboard */; };
+		D2D47EAF23C7366300EA351F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D47EAE23C7366300EA351F /* Assets.xcassets */; };
+		D2D47EB223C7366300EA351F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D47EB023C7366300EA351F /* LaunchScreen.storyboard */; };
+		D2D47EBD23C7366400EA351F /* SofuberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D47EBC23C7366400EA351F /* SofuberTests.swift */; };
+		D2D47EC823C7366400EA351F /* SofuberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D47EC723C7366400EA351F /* SofuberUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2D47EB923C7366400EA351F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2D47E9C23C7365E00EA351F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2D47EA323C7365E00EA351F;
+			remoteInfo = Sofuber;
+		};
+		D2D47EC423C7366400EA351F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2D47E9C23C7365E00EA351F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2D47EA323C7365E00EA351F;
+			remoteInfo = Sofuber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2D47EA423C7365E00EA351F /* Sofuber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sofuber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D47EA723C7365E00EA351F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2D47EA923C7365E00EA351F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2D47EAC23C7365E00EA351F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2D47EAE23C7366300EA351F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2D47EB123C7366300EA351F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2D47EB323C7366300EA351F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D47EB823C7366400EA351F /* SofuberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SofuberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D47EBC23C7366400EA351F /* SofuberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofuberTests.swift; sourceTree = "<group>"; };
+		D2D47EBE23C7366400EA351F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D47EC323C7366400EA351F /* SofuberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SofuberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D47EC723C7366400EA351F /* SofuberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofuberUITests.swift; sourceTree = "<group>"; };
+		D2D47EC923C7366400EA351F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2D47EA123C7365E00EA351F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D47EB523C7366400EA351F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D47EC023C7366400EA351F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2D47E9B23C7365E00EA351F = {
+			isa = PBXGroup;
+			children = (
+				D2D47EA623C7365E00EA351F /* Sofuber */,
+				D2D47EBB23C7366400EA351F /* SofuberTests */,
+				D2D47EC623C7366400EA351F /* SofuberUITests */,
+				D2D47EA523C7365E00EA351F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2D47EA523C7365E00EA351F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2D47EA423C7365E00EA351F /* Sofuber.app */,
+				D2D47EB823C7366400EA351F /* SofuberTests.xctest */,
+				D2D47EC323C7366400EA351F /* SofuberUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2D47EA623C7365E00EA351F /* Sofuber */ = {
+			isa = PBXGroup;
+			children = (
+				D2D47EA723C7365E00EA351F /* AppDelegate.swift */,
+				D2D47EA923C7365E00EA351F /* ViewController.swift */,
+				D2D47EAB23C7365E00EA351F /* Main.storyboard */,
+				D2D47EAE23C7366300EA351F /* Assets.xcassets */,
+				D2D47EB023C7366300EA351F /* LaunchScreen.storyboard */,
+				D2D47EB323C7366300EA351F /* Info.plist */,
+			);
+			path = Sofuber;
+			sourceTree = "<group>";
+		};
+		D2D47EBB23C7366400EA351F /* SofuberTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2D47EBC23C7366400EA351F /* SofuberTests.swift */,
+				D2D47EBE23C7366400EA351F /* Info.plist */,
+			);
+			path = SofuberTests;
+			sourceTree = "<group>";
+		};
+		D2D47EC623C7366400EA351F /* SofuberUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2D47EC723C7366400EA351F /* SofuberUITests.swift */,
+				D2D47EC923C7366400EA351F /* Info.plist */,
+			);
+			path = SofuberUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2D47EA323C7365E00EA351F /* Sofuber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D47ECC23C7366400EA351F /* Build configuration list for PBXNativeTarget "Sofuber" */;
+			buildPhases = (
+				D2D47EA023C7365E00EA351F /* Sources */,
+				D2D47EA123C7365E00EA351F /* Frameworks */,
+				D2D47EA223C7365E00EA351F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sofuber;
+			productName = Sofuber;
+			productReference = D2D47EA423C7365E00EA351F /* Sofuber.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2D47EB723C7366400EA351F /* SofuberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D47ECF23C7366400EA351F /* Build configuration list for PBXNativeTarget "SofuberTests" */;
+			buildPhases = (
+				D2D47EB423C7366400EA351F /* Sources */,
+				D2D47EB523C7366400EA351F /* Frameworks */,
+				D2D47EB623C7366400EA351F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2D47EBA23C7366400EA351F /* PBXTargetDependency */,
+			);
+			name = SofuberTests;
+			productName = SofuberTests;
+			productReference = D2D47EB823C7366400EA351F /* SofuberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2D47EC223C7366400EA351F /* SofuberUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D47ED223C7366400EA351F /* Build configuration list for PBXNativeTarget "SofuberUITests" */;
+			buildPhases = (
+				D2D47EBF23C7366400EA351F /* Sources */,
+				D2D47EC023C7366400EA351F /* Frameworks */,
+				D2D47EC123C7366400EA351F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2D47EC523C7366400EA351F /* PBXTargetDependency */,
+			);
+			name = SofuberUITests;
+			productName = SofuberUITests;
+			productReference = D2D47EC323C7366400EA351F /* SofuberUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2D47E9C23C7365E00EA351F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "BEATRIZ LOPEZ DEL MORAL GARCIA JIMENEZ";
+				TargetAttributes = {
+					D2D47EA323C7365E00EA351F = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					D2D47EB723C7366400EA351F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D2D47EA323C7365E00EA351F;
+					};
+					D2D47EC223C7366400EA351F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D2D47EA323C7365E00EA351F;
+					};
+				};
+			};
+			buildConfigurationList = D2D47E9F23C7365E00EA351F /* Build configuration list for PBXProject "Sofuber" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2D47E9B23C7365E00EA351F;
+			productRefGroup = D2D47EA523C7365E00EA351F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2D47EA323C7365E00EA351F /* Sofuber */,
+				D2D47EB723C7366400EA351F /* SofuberTests */,
+				D2D47EC223C7366400EA351F /* SofuberUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2D47EA223C7365E00EA351F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D47EB223C7366300EA351F /* LaunchScreen.storyboard in Resources */,
+				D2D47EAF23C7366300EA351F /* Assets.xcassets in Resources */,
+				D2D47EAD23C7365E00EA351F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D47EB623C7366400EA351F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D47EC123C7366400EA351F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2D47EA023C7365E00EA351F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D47EAA23C7365E00EA351F /* ViewController.swift in Sources */,
+				D2D47EA823C7365E00EA351F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D47EB423C7366400EA351F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D47EBD23C7366400EA351F /* SofuberTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D47EBF23C7366400EA351F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D47EC823C7366400EA351F /* SofuberUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2D47EBA23C7366400EA351F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2D47EA323C7365E00EA351F /* Sofuber */;
+			targetProxy = D2D47EB923C7366400EA351F /* PBXContainerItemProxy */;
+		};
+		D2D47EC523C7366400EA351F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2D47EA323C7365E00EA351F /* Sofuber */;
+			targetProxy = D2D47EC423C7366400EA351F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2D47EAB23C7365E00EA351F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2D47EAC23C7365E00EA351F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2D47EB023C7366300EA351F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2D47EB123C7366300EA351F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2D47ECA23C7366400EA351F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2D47ECB23C7366400EA351F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2D47ECD23C7366400EA351F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sofuber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Sofuber";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2D47ECE23C7366400EA351F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sofuber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Sofuber";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2D47ED023C7366400EA351F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SofuberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.SofuberTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sofuber.app/Sofuber";
+			};
+			name = Debug;
+		};
+		D2D47ED123C7366400EA351F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SofuberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.SofuberTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sofuber.app/Sofuber";
+			};
+			name = Release;
+		};
+		D2D47ED323C7366400EA351F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SofuberUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.SofuberUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sofuber;
+			};
+			name = Debug;
+		};
+		D2D47ED423C7366400EA351F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SofuberUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.SofuberUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sofuber;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2D47E9F23C7365E00EA351F /* Build configuration list for PBXProject "Sofuber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D47ECA23C7366400EA351F /* Debug */,
+				D2D47ECB23C7366400EA351F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2D47ECC23C7366400EA351F /* Build configuration list for PBXNativeTarget "Sofuber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D47ECD23C7366400EA351F /* Debug */,
+				D2D47ECE23C7366400EA351F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2D47ECF23C7366400EA351F /* Build configuration list for PBXNativeTarget "SofuberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D47ED023C7366400EA351F /* Debug */,
+				D2D47ED123C7366400EA351F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2D47ED223C7366400EA351F /* Build configuration list for PBXNativeTarget "SofuberUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D47ED323C7366400EA351F /* Debug */,
+				D2D47ED423C7366400EA351F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2D47E9C23C7365E00EA351F /* Project object */;
+}
