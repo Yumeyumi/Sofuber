@@ -123,6 +123,7 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.10.0)
+  - TesseractOCRiOS (4.0.0)
 
 DEPENDENCIES:
   - Firebase (~> 6.1.0)
@@ -130,6 +131,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Firestore
   - GoogleSignIn (~> 4.1.0)
+  - TesseractOCRiOS (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -152,6 +154,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Protobuf
+    - TesseractOCRiOS
 
 SPEC CHECKSUMS:
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
@@ -173,7 +176,8 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: a4dc852ad69c027ca2166ed287b856697814375b
+  TesseractOCRiOS: 90638afbe43d082433f2e76b384c7901d23956df
 
-PODFILE CHECKSUM: d5b1cfdd6a9d2362fbb462db4644fa165caf0161
+PODFILE CHECKSUM: 91727d80f882a6618273f1d48b9293cd6c3b9e8d
 
 COCOAPODS: 1.5.3

@@ -21,6 +21,7 @@
 		D2D47ED923C7431300EA351F /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D47ED823C7431300EA351F /* PersistenceService.swift */; };
 		D2D47EE023C745A300EA351F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2D47EDE23C745A300EA351F /* Model.xcdatamodeld */; };
 		D2D47EE223C74B7200EA351F /* ViewControlerRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D47EE123C74B7200EA351F /* ViewControlerRegister.swift */; };
+		D2D47EE423CF1F1C00EA351F /* ViewControllerCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D47EE323CF1F1C00EA351F /* ViewControllerCamera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		D2D47ED823C7431300EA351F /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		D2D47EDF23C745A300EA351F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		D2D47EE123C74B7200EA351F /* ViewControlerRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControlerRegister.swift; sourceTree = "<group>"; };
+		D2D47EE323CF1F1C00EA351F /* ViewControllerCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCamera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				D2D47ED723C742DA00EA351F /* Model */,
 				D2D47EA723C7365E00EA351F /* AppDelegate.swift */,
 				D2D47EA923C7365E00EA351F /* ViewController.swift */,
+				D2D47EE323CF1F1C00EA351F /* ViewControllerCamera.swift */,
 				D2D47EE123C74B7200EA351F /* ViewControlerRegister.swift */,
 				D2D47EAB23C7365E00EA351F /* Main.storyboard */,
 				D2D47EAE23C7366300EA351F /* Assets.xcassets */,
@@ -375,6 +378,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -388,6 +392,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -446,6 +451,7 @@
 				D2D47EA823C7365E00EA351F /* AppDelegate.swift in Sources */,
 				D2D47EE023C745A300EA351F /* Model.xcdatamodeld in Sources */,
 				D2D47EE223C74B7200EA351F /* ViewControlerRegister.swift in Sources */,
+				D2D47EE423CF1F1C00EA351F /* ViewControllerCamera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
