@@ -12,11 +12,12 @@ import TesseractOCR
 class ViewControllerCamera: UIViewController, G8TesseractDelegate {
     
     @IBOutlet weak var textImage: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // aquí vemos los idiomas que le podemos incluir
         //https://github.com/tesseract-ocr/tessdata 
-        if let tesseract = G8Tesseract(language: "eng"){
+        if let tesseract = G8Tesseract(language: "eng+spa_old+spa"){
             tesseract.delegate = self
             tesseract.image = UIImage(named: "demoText")?.g8_blackAndWhite()
             tesseract.recognize()

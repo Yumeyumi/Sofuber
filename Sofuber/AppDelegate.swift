@@ -73,7 +73,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             DispatchQueue.main.async{ self.viewController.createCollection(name: name, last: last, born: 1234)}
             
             let storyBoard = UIStoryboard(name: "Main",bundle:nil)
-            let control = storyBoard.instantiateViewController(withIdentifier: "NavTabMap")
+            let control = storyBoard.instantiateViewController(withIdentifier: "Camera")
             self.window?.rootViewController = control
             
         }

@@ -103,25 +103,45 @@
                         <outlet property="signUpButton" destination="2Bm-KL-R9e" id="v20-pY-gBQ"/>
                         <outlet property="txtPass" destination="4H9-oI-daF" id="CRy-AL-6FX"/>
                         <outlet property="txtUser" destination="kOV-kC-0Ys" id="jTh-ad-MOs"/>
+                        <segue destination="PoA-71-N1C" kind="show" identifier="Camera" id="DHN-5J-pMS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="591" y="32"/>
         </scene>
-        <!--View ControllerCamera-->
+        <!--View Controller Camera-->
         <scene sceneID="qKb-6H-AOs">
             <objects>
-                <viewController id="PoA-71-N1C" userLabel="View ControllerCamera" customClass="ViewControlerCamera" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Camera" id="PoA-71-N1C" userLabel="View Controller Camera" customClass="ViewControllerCamera" customModule="Sofuber" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Kd-qn-P6o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Cc-Ir-XIY">
+                                <rect key="frame" x="67" y="93" width="240" height="84"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kg7-hu-UHH" firstAttribute="bottom" secondItem="7Cc-Ir-XIY" secondAttribute="bottom" constant="446" id="C7W-bo-J8d"/>
+                            <constraint firstItem="kg7-hu-UHH" firstAttribute="trailing" secondItem="7Cc-Ir-XIY" secondAttribute="trailing" constant="68" id="GHJ-4X-Jbf"/>
+                            <constraint firstItem="7Cc-Ir-XIY" firstAttribute="top" secondItem="kg7-hu-UHH" secondAttribute="top" constant="73" id="SX4-fD-HJY"/>
+                            <constraint firstItem="7Cc-Ir-XIY" firstAttribute="leading" secondItem="kg7-hu-UHH" secondAttribute="leading" constant="67" id="gBx-EB-XdC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kg7-hu-UHH"/>
                     </view>
+                    <connections>
+                        <outlet property="textImage" destination="7Cc-Ir-XIY" id="xrP-eq-Lib"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yc-Cu-g2X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1439" y="32"/>
+            <point key="canvasLocation" x="1582" y="32"/>
         </scene>
         <!--View Controler Register-->
         <scene sceneID="Pvh-hi-5c4">

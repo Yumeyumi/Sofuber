@@ -96,7 +96,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
                 self?.user = Auth.auth().currentUser
                 
                 //Voy a la ventana de Mapa
-                DispatchQueue.main.async{ self?.performSegue(withIdentifier: "NavTabMap", sender: self) }
+                DispatchQueue.main.async{ self?.performSegue(withIdentifier: "Camera", sender: self) }
             } else {
                 print(error)
             }

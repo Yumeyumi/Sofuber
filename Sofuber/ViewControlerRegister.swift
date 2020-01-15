@@ -47,7 +47,7 @@ class ViewControlerRegister: UIViewController {
                 self.addCoreData(user: (self.txtUser?.text)!, pass: (self.txtPass?.text)!)
                 DispatchQueue.main.async{ self.showToast(message: "¡Te has registrado!") }
                 //Voy a la ventana de Mapa
-                DispatchQueue.main.async{ self.performSegue(withIdentifier: "NavTabMap", sender: self) }
+                DispatchQueue.main.async{ self.performSegue(withIdentifier: "Camera", sender: self) }
             } else {
                 
                 self.showToast(message: (error?.localizedDescription)!)

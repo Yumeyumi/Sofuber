@@ -22,6 +22,7 @@
 		D2D47EE023C745A300EA351F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2D47EDE23C745A300EA351F /* Model.xcdatamodeld */; };
 		D2D47EE223C74B7200EA351F /* ViewControlerRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D47EE123C74B7200EA351F /* ViewControlerRegister.swift */; };
 		D2D47EE423CF1F1C00EA351F /* ViewControllerCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D47EE323CF1F1C00EA351F /* ViewControllerCamera.swift */; };
+		D2E5F03823CF32F5001E0F03 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = D2E5F03723CF32F5001E0F03 /* tessdata */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		D2D47EDF23C745A300EA351F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		D2D47EE123C74B7200EA351F /* ViewControlerRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControlerRegister.swift; sourceTree = "<group>"; };
 		D2D47EE323CF1F1C00EA351F /* ViewControllerCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCamera.swift; sourceTree = "<group>"; };
+		D2E5F03723CF32F5001E0F03 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		D2D47EA623C7365E00EA351F /* Sofuber */ = {
 			isa = PBXGroup;
 			children = (
+				D2E5F03723CF32F5001E0F03 /* tessdata */,
 				D2D47EDA23C7446100EA351F /* CoreData */,
 				D2D47ED723C742DA00EA351F /* Model */,
 				D2D47EA723C7365E00EA351F /* AppDelegate.swift */,
@@ -307,6 +310,7 @@
 			files = (
 				D2D47EB223C7366300EA351F /* LaunchScreen.storyboard in Resources */,
 				D2D47ED623C740B100EA351F /* GoogleService-Info.plist in Resources */,
+				D2E5F03823CF32F5001E0F03 /* tessdata in Resources */,
 				D2D47EAF23C7366300EA351F /* Assets.xcassets in Resources */,
 				D2D47EAD23C7365E00EA351F /* Main.storyboard in Resources */,
 			);
