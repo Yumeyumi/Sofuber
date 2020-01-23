@@ -21,4 +21,5 @@ pod 'Firebase/Auth'
 pod 'Firebase/Core'
 pod 'Firebase/Firestore'
 pod 'GoogleSignIn','~>4.1.0'
-pod 'TesseractOCRiOS', '~>4.0.0' end
+pod 'TesseractOCRiOS', '~>4.0.0'
+end
