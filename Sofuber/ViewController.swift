@@ -50,7 +50,6 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
             signIn(mail: (txtUser?.text)!,password: (txtPass?.text)!)
             //Añadir el usuario al coreData
             addCoreData(user: (txtUser?.text)!, pass: (txtPass?.text)!)
-            
         }
         
     }

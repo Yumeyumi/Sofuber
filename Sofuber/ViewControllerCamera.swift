@@ -9,8 +9,13 @@
 import UIKit
 import TesseractOCR
 import AVFoundation
+import FirebaseAuth
+import FirebaseFirestore
+import Firebase
+import FirebaseCore
+import GoogleSignIn
 
-class ViewControllerCamera: UIViewController, G8TesseractDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+class ViewControllerCamera: UIViewController, G8TesseractDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,GIDSignInUIDelegate {
  
     let imagePicker: UIImagePickerController = UIImagePickerController()
     @IBOutlet weak var textImage: UITextView!
@@ -28,7 +33,7 @@ class ViewControllerCamera: UIViewController, G8TesseractDelegate,UIImagePickerC
             tesseract.delegate = self
             
         //cogemos la imagen formato blanco y negro
-            tesseract.image = UIImage(named: "demoText")?.g8_blackAndWhite()
+            tesseract.image = UIImage(named: "demoTextSpa")?.g8_blackAndWhite()
             //Inspeccionamos
             tesseract.recognize()
             //De lo recogido en text lo ponemos en la variable
@@ -90,6 +95,24 @@ class ViewControllerCamera: UIViewController, G8TesseractDelegate,UIImagePickerC
         }
         //Quitamos la animación de la camara
         imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func onClickSignOut(_ sender: UIBarButtonItem){
+        PersistenceService.deleteAllCodesRecords()
+        signOut()
+        GIDSignIn.sharedInstance().signOut()
+    }
+    //Cerrar sesión normal
+    func signOut(){
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        showToast(message: "Has cerrado sesión")
+       
     }
     
     

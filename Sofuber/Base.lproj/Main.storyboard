@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sofuber" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="BYZ-38-t0r" customClass="ViewController" customModule="Sofuber" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,20 +119,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cgN-dG-A8d">
-                                <rect key="frame" x="95" y="46" width="185" height="260"/>
+                                <rect key="frame" x="95" y="65" width="185" height="240"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="260" id="dVF-0w-J3c"/>
+                                    <constraint firstAttribute="height" constant="240" id="dVF-0w-J3c"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlF-k1-hdl">
-                                <rect key="frame" x="150" y="314" width="75" height="30"/>
+                                <rect key="frame" x="100" y="313" width="175" height="30"/>
                                 <state key="normal" title="Take photo"/>
                                 <connections>
                                     <action selector="takePhoto:" destination="PoA-71-N1C" eventType="touchUpInside" id="d39-Wq-IB1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6P-wM-9b3">
-                                <rect key="frame" x="139" y="585" width="97" height="30"/>
+                                <rect key="frame" x="139" y="584" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="vkd-EM-ILk"/>
                                 </constraints>
@@ -142,14 +142,14 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="trp-ZI-oZ9">
-                                <rect key="frame" x="30" y="527" width="315" height="29"/>
+                                <rect key="frame" x="30" y="526" width="315" height="29"/>
                                 <segments>
                                     <segment title="English"/>
                                     <segment title="Spanish"/>
                                 </segments>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Cc-Ir-XIY">
-                                <rect key="frame" x="30" y="363" width="315" height="128"/>
+                                <rect key="frame" x="30" y="362" width="315" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="rxY-vS-hON"/>
@@ -158,9 +158,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ouf-K6-Yr4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="mqT-uN-pu6"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="pdD-FR-5Se">
+                                        <barButtonItem key="rightBarButtonItem" title="Close sesion" id="7Ve-Ss-KL3">
+                                            <connections>
+                                                <action selector="onClickSignOut:" destination="PoA-71-N1C" id="J73-gy-gwL"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Ouf-K6-Yr4" firstAttribute="leading" secondItem="kg7-hu-UHH" secondAttribute="leading" id="1gS-E2-EcQ"/>
                             <constraint firstItem="P6P-wM-9b3" firstAttribute="top" secondItem="trp-ZI-oZ9" secondAttribute="bottom" constant="30" id="8g4-yM-XGe"/>
                             <constraint firstItem="mlF-k1-hdl" firstAttribute="top" secondItem="cgN-dG-A8d" secondAttribute="bottom" constant="8" id="AQP-ml-tQc"/>
                             <constraint firstItem="P6P-wM-9b3" firstAttribute="leading" secondItem="kg7-hu-UHH" secondAttribute="leading" constant="139" id="Aw1-h5-f3P"/>
@@ -170,27 +186,32 @@
                             <constraint firstItem="mlF-k1-hdl" firstAttribute="top" secondItem="cgN-dG-A8d" secondAttribute="bottom" constant="8" id="VJn-3f-zSK"/>
                             <constraint firstItem="trp-ZI-oZ9" firstAttribute="top" secondItem="7Cc-Ir-XIY" secondAttribute="bottom" constant="36" id="VVM-IA-mli"/>
                             <constraint firstItem="kg7-hu-UHH" firstAttribute="trailing" secondItem="cgN-dG-A8d" secondAttribute="trailing" constant="95" id="W5p-dG-aj2"/>
-                            <constraint firstItem="mlF-k1-hdl" firstAttribute="leading" secondItem="kg7-hu-UHH" secondAttribute="leading" constant="150" id="WxQ-z6-6s5"/>
+                            <constraint firstItem="mlF-k1-hdl" firstAttribute="leading" secondItem="kg7-hu-UHH" secondAttribute="leading" constant="100" id="WxQ-z6-6s5"/>
                             <constraint firstItem="trp-ZI-oZ9" firstAttribute="top" secondItem="7Cc-Ir-XIY" secondAttribute="bottom" constant="36" id="XnM-wE-PQX"/>
                             <constraint firstItem="P6P-wM-9b3" firstAttribute="top" secondItem="trp-ZI-oZ9" secondAttribute="bottom" constant="30" id="dR6-YP-OsJ"/>
                             <constraint firstItem="7Cc-Ir-XIY" firstAttribute="trailing" secondItem="trp-ZI-oZ9" secondAttribute="trailing" id="ebq-tT-16q"/>
                             <constraint firstItem="kg7-hu-UHH" firstAttribute="trailing" secondItem="P6P-wM-9b3" secondAttribute="trailing" constant="139" id="o88-k3-3kq"/>
-                            <constraint firstItem="kg7-hu-UHH" firstAttribute="trailing" secondItem="mlF-k1-hdl" secondAttribute="trailing" constant="150" id="owf-QD-ulF"/>
+                            <constraint firstItem="kg7-hu-UHH" firstAttribute="trailing" secondItem="mlF-k1-hdl" secondAttribute="trailing" constant="100" id="owf-QD-ulF"/>
                             <constraint firstItem="kg7-hu-UHH" firstAttribute="trailing" secondItem="trp-ZI-oZ9" secondAttribute="trailing" constant="30" id="q6s-NP-yjp"/>
-                            <constraint firstItem="cgN-dG-A8d" firstAttribute="top" secondItem="kg7-hu-UHH" secondAttribute="top" constant="26" id="xMc-Nd-fo8"/>
+                            <constraint firstItem="Ouf-K6-Yr4" firstAttribute="trailing" secondItem="kg7-hu-UHH" secondAttribute="trailing" id="qkw-Gs-wXI"/>
+                            <constraint firstItem="Ouf-K6-Yr4" firstAttribute="top" secondItem="5Kd-qn-P6o" secondAttribute="top" id="wM2-gD-6ln"/>
+                            <constraint firstItem="cgN-dG-A8d" firstAttribute="top" secondItem="kg7-hu-UHH" secondAttribute="top" constant="45" id="xMc-Nd-fo8"/>
                             <constraint firstItem="trp-ZI-oZ9" firstAttribute="leading" secondItem="kg7-hu-UHH" secondAttribute="leading" constant="30" id="yeM-sZ-rcb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kg7-hu-UHH"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="image" destination="cgN-dG-A8d" id="iAl-wl-ufD"/>
                         <outlet property="segmentlenguage" destination="trp-ZI-oZ9" id="kIS-cb-PPy"/>
                         <outlet property="textImage" destination="7Cc-Ir-XIY" id="xrP-eq-Lib"/>
+                        <segue destination="BYZ-38-t0r" kind="show" id="Wy6-AE-f6t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yc-Cu-g2X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1581.5999999999999" y="31.934032983508249"/>
+            <point key="canvasLocation" x="1612" y="-60"/>
         </scene>
         <!--View Controler Register-->
         <scene sceneID="Pvh-hi-5c4">
@@ -301,4 +322,7 @@
             <point key="canvasLocation" x="-954" y="666"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Wy6-AE-f6t"/>
+    </inferredMetricsTieBreakers>
 </document>
